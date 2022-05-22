@@ -7,7 +7,7 @@ var logger = require('morgan');
 // setup mongoose connection
 var mongoose = require('mongoose');
 var mongoDB =
-  'mongodb+srv://ivewor_db:<db_pass_12345>@cluster0.i1ofr.mongodb.net/?retryWrites=true&w=majority';
+  'mongodb+srv://ivewor_db:ivewor_pass@cluster0.i1ofr.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // get the default database connection
