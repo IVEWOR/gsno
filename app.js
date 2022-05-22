@@ -9,7 +9,7 @@ var env = require('./env');
 
 // setup mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = env;
+var mongoDB = mongoURI;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // get the default database connection
