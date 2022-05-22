@@ -4,10 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// URI
+var env = require('./env');
+
 // setup mongoose connection
 var mongoose = require('mongoose');
-var mongoDB =
-  'mongodb+srv://ivewor_db:ivewor_pass@cluster0.i1ofr.mongodb.net/?retryWrites=true&w=majority';
+var mongoDB = env;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // get the default database connection
